@@ -1,2 +1,64 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+<!-- <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/New-York-Times-SocialDistancing.jpg" %>')">
+    Breakfast
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Lunch
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Dinner
+  </div>
+</div>
+
+ <%=image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/New-York-Times-SocialDistancing.jpg"%> -->
+
+
+
+
+<div class="container-fluid">
+  <h1>Design in the Time of Corona</h1>
+  <div class="row">
+    <div class="column">
+
+      <div class="content-container">
+        <%= image_tag 'https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/New-York-Times-SocialDistancing.jpg', class: 'content-image' %>
+        <div class="middle">
+          <div class="content-text">
+            New York Times
+          </div>
+        </div>
+      </div>
+
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg">
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/Screenshot_2020-04-04_at_14.05.50_yeqpw7.png" %>
+      <%= image_tag("https://res.cloudinary.com/dolzriuzv/image/upload/v1584644246/Xda74qjXU5Ai1kHahv2pJfuf.jpg") %>
+      <%= image_tag("https://res.cloudinary.com/dolzriuzv/image/upload/v1584644241/MkyfSsM4fVDNeiL5dwb8jByg.jpg") %>
+    </div>
+    <div class="column">
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/Screenshot_2020-04-04_at_14.05.50_yeqpw7.png" %>
+      <%= image_tag("https://res.cloudinary.com/dolzriuzv/image/upload/v1584644238/u9NYYhjjCzQjM8rk9QcMcgSj.jpg") %>
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg">
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644246/Xda74qjXU5Ai1kHahv2pJfuf.jpg" %>
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644241/MkyfSsM4fVDNeiL5dwb8jByg.jpg" %>  </div>
+    <div class="column">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg">
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644246/Xda74qjXU5Ai1kHahv2pJfuf.jpg" %>
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644241/MkyfSsM4fVDNeiL5dwb8jByg.jpg" %>
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1586025890/coronadesign/New-York-Times-SocialDistancing.jpg" %>
+    </div>
+    <div class="column">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg">
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644246/Xda74qjXU5Ai1kHahv2pJfuf.jpg" %>
+      <%= image_tag "https://res.cloudinary.com/dolzriuzv/image/upload/v1584644241/MkyfSsM4fVDNeiL5dwb8jByg.jpg" %>
+    </div>
+  </div>
+
+
+</div>
+
