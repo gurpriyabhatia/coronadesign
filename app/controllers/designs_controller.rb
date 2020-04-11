@@ -2,6 +2,7 @@ class DesignsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
   def index
+    @designs = Design.all
   end
 
   def show
