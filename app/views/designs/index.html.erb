@@ -1,1 +1,19 @@
-index.html.erb
+
+<div class="container-fluid">
+  <h1>Design in the Time of Corona</h1>
+
+<% @designs.in_groups_of(4, false).each do |group| %>
+  <div class="row">
+    <% group.each do |design| %>
+    <div class="column">
+        <%= cl_image_tag design.photo.key %>
+        <h2><%= design.title %></h2>
+    </div>
+      <% end %>
+
+     <% end %>
+
+  </div>
+
+</div>
+
