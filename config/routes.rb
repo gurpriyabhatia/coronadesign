@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
 resources :designs
 
+get 'about', to: 'pages#about'
+
 root to: "designs#index", as: :unauthenticated_root
 
 # authenticated :user do
