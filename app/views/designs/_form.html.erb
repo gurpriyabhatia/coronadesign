@@ -1,0 +1,6 @@
+<%= simple_form_for @design do |f| %>
+  <%= f.input :title, label: "Title", as: :string %>
+  <%= f.input :source, label: "Source", as: :string %>
+  <%= f.input :description, label: "Description", as: :string %>
+  <%= f.submit "Submit Your Design", class: "btn btn-primary"  %>
+<% end %>
