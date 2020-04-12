@@ -1,6 +1,7 @@
 <h1><%= @design.title %></h1>
 <p><%= @design.source %></p>
 <p><%= @design.description %></p>
+<p><%= @design.user.email %></p>
 
 <%= link_to "Back", designs_path %>
 <%= link_to "Edit", edit_design_path %>

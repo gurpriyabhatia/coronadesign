@@ -10,11 +10,11 @@ class DesignsController < ApplicationController
   end
 
   def new
-    @design = Design.new
+    @design = current_user.designs.build
   end
 
   def create
-    @design = Design.new(design_params)
+    @design = current_user.designs.build(design_params)
 
     if @design.save!
       redirect_to @design, notice: "Sucessfully added new design"
