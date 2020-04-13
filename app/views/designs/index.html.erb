@@ -1,6 +1,11 @@
-<h1>Index: Design in the Time of Corona</h1>
-
-<% @designs.each do |design| %>
-    <%= link_to cl_image_tag(design.photo.key), design_path(design) %>
-    <h2><%= link_to design.title, design %></h2>
- <% end %>
+<h1>Index: design in the time of corona</h1>
+<div class="transitions-enabled" id="pins">
+  <% @designs.each do |design| %>
+    <div class="box panel panel-default">
+      <%= link_to cl_image_tag(design.photo.key), design_path(design) %>
+        <div class="panel-body">
+          <h2><%= link_to design.title, design %></h2>
+        </div>
+    </div>
+  <% end %>
+</div>
