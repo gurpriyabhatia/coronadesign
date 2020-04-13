@@ -1,7 +1,7 @@
 (function() {
   $(function() {
-    return $('#pins').imagesLoaded(function() {
-      return $('#pins').masonry({
+    return $('#designs').imagesLoaded(function() {
+      return $('#designs').masonry({
         itemSelector: '.box',
         isFitWidth: true
       });

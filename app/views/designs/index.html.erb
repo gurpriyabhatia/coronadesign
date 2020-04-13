@@ -1,8 +1,8 @@
 <h1>Index: design in the time of corona</h1>
-<div class="transitions-enabled" id="pins">
+<div class="transitions-enabled" id="designs">
   <% @designs.each do |design| %>
     <div class="box panel panel-default">
-      <%= link_to cl_image_tag(design.photo.key), design_path(design) %>
+      <%= link_to cl_image_tag(design.photo.key, :width=>300, :crop=>"scale"), design_path(design) %>
         <div class="panel-body">
           <h2><%= link_to design.title, design %></h2>
         </div>
