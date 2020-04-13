@@ -31,4 +31,6 @@ end
 
 gem 'cloudinary', '~> 1.12.0'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery-rails'
+
 # gem 'haml'
