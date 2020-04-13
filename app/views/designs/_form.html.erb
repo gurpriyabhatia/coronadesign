@@ -3,5 +3,6 @@
   <%= f.input :title, label: "Title", as: :string, autofocus: true%>
   <%= f.input :source, label: "Source", as: :string, autofocus: true %>
   <%= f.input :description, label: "Description", as: :text, autofocus: true, :input_html => {:style => 'width: 100%', :rows => 5} %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Upload Design", class: "btn-red"  %>
 <% end %>
