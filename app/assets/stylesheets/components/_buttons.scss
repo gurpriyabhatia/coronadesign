@@ -1,0 +1,32 @@
+.btn-red {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 6px;
+  background: #800020;
+  transition: background 0.3s ease;
+   &:hover {
+    color: white;
+    text-decoration: none;
+    filter: brightness(80%);
+  }
+}
+
+.btn-grey {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 6px;
+  background: black;
+  opacity: 60%;
+  transition: background 0.3s ease;
+   &:hover {
+    color: white;
+    text-decoration: none;
+    filter: brightness(80%);
+  }
+}
+
+.nav-link {
+  margin: 0;
+  color:  #800020 !important;
+  text-decoration: none;
+}
