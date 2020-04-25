@@ -5,10 +5,15 @@
 <p><%= @design.description %></p>
 <p><%= @design.user.email %></p>
 
-<%= link_to "Back", designs_path %>
-<% if policy(@design).edit? %>
-  <%= link_to "Edit", edit_design_path %>
-<% end %>
-<% if policy(@design).destroy? %>
-  <%= link_to "Delete", design_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+  <%= link_to "Back", designs_path %>
+
+<% if user_signed_in? %>
+
+  <% if policy(@design).edit? %>
+    <%= link_to "Edit", edit_design_path %>
+  <% end %>
+  <% if policy(@design).destroy? %>
+    <%= link_to "Delete", design_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+  <% end %>
+
 <% end %>

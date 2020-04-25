@@ -1,5 +1,7 @@
 class DesignsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
+  # skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_after_action :verify_policy_scoped, only: [:index, :show]
   before_action :find_design, only: [:show, :edit, :update, :destroy]
   # before_action :auth_design, only: [:new, :create, :edit, :update, :destroy]
 
@@ -8,6 +10,7 @@ class DesignsController < ApplicationController
   end
 
   def show
+    #authorize @design
   end
 
   def new
