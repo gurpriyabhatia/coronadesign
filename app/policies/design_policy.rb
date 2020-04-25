@@ -9,8 +9,12 @@ class DesignPolicy < ApplicationPolicy
   #   false # noone can create a new design
   # end
 
+  # def show?
+  #   true
+  # end
+
   def create?
-    return true # anyone can create a design
+    true # anyone can create a design
   end
 
   def update?
@@ -19,7 +23,6 @@ class DesignPolicy < ApplicationPolicy
 
   def destroy?
     # only admin can delete a design
-
     # only owner can delete a design
     user_is_owner_or_admin?
   end
