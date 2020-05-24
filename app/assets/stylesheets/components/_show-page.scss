@@ -1,20 +1,21 @@
-.wrapper {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  margin: auto;
-  position: relative;
-  clear: both;
-  overflow: hidden;
-}
+// .wrapper {
+//   width: 100%;
+//   height: auto;
+//   display: inline-block;
+//   margin: auto;
+//   position: relative;
+//   clear: both;
+//   overflow: hidden;
+// }
 
-.mediaDisplayContainer {
+.row .wrapper {
   // height: 100%;
   // width: 100%;
-  padding: 24px 50px 24px 50px;
+  //padding: 24px 50px 24px 50px;
   // margin: auto;
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
+
   background: linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 100%),#F6F6F6;
 }
 
@@ -28,11 +29,11 @@
 
 .mediaContent {
   background: #fff;
-  float: right;
-  display: inline-block;
-  max-width: 348px;
-  padding: 0 24px;
-  width: 100%;
-  text-align: left;
-  overflow-wrap: break-word;
+  // float: right;
+  // display: inline-block;
+  // max-width: 348px;
+  // padding: 0 24px;
+  // width: 100%;
+  // text-align: left;
+  // overflow-wrap: break-word;
 }

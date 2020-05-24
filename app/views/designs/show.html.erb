@@ -1,5 +1,5 @@
 
-<div class ="wrapper">
+<!-- <div class ="wrapper">
 
   <div class="mediaDisplayContainer">
 
@@ -26,6 +26,37 @@
     </div>
 
 
+
+  </div>
+
+</div> -->
+
+
+<!-- New Code -->
+
+<div class="container">
+  <div class="row wrapper">
+    <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+      <%= cl_image_tag(@design.photo.key, :width=>600, :crop=>"scale", :radius => 8) %>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4 mediaContent">
+      <h1><%= @design.title %></h1>
+      <p><%= @design.source %></p>
+      <p><%= @design.description %></p>
+      <p><%= @design.user.email %></p>
+
+      <%= link_to "Back", designs_path %>
+
+      <% if user_signed_in? %>
+        <% if policy(@design).edit? %>
+          <%= link_to "Edit", edit_design_path %>
+        <% end %>
+        <% if policy(@design).destroy? %>
+          <%= link_to "Delete", design_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+        <% end %>
+      <% end %>
+    </div>
 
   </div>
 
