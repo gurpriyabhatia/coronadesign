@@ -36,29 +36,35 @@
 
 <div class="container">
   <div class="row wrapper">
+
     <div class="col-12 col-sm-8 col-md-8 col-lg-8">
       <%= cl_image_tag(@design.photo.key, :width=>600, :crop=>"scale", :radius => 8) %>
     </div>
 
 
     <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-      <%= link_to designs_path do %>
-        <i class="fas fa-times-circle float-right"  style="color:RosyBrown;"></i>
-      <% end %>
-
-      <h1><%= @design.title %></h1>
-      <p><%= @design.source %></p>
-      <p><%= @design.description %></p>
-      <p><%= @design.user.email %></p>
-
-      <% if user_signed_in? %>
-        <% if policy(@design).edit? %>
-          <%= link_to "Edit", edit_design_path %>
+      <div class="mediaContent">
+        <%= link_to designs_path do %>
+          <i class="fas fa-times-circle float-right"  style="color:RosyBrown;"></i>
         <% end %>
-        <% if policy(@design).destroy? %>
-          <%= link_to "Delete", design_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+
+        <h1><%= @design.title %></h1>
+        <p><%= @design.source %></p>
+        <p><%= @design.description %></p>
+        <p><%= @design.user.email %></p>
+
+        <% if user_signed_in? %>
+          <% if policy(@design).edit? %>
+            <%= link_to "Edit", edit_design_path %>
+          <% end %>
+
+          <% if policy(@design).destroy? %>
+            <%= link_to "Delete", design_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+          <% end %>
+
         <% end %>
-      <% end %>
+
+      </div>
     </div>
 
   </div>
