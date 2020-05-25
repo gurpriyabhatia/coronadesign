@@ -4,7 +4,7 @@
   <div class="mediaDisplayContainer">
 
     <div class="mediaContainer">
-      <%= cl_image_tag(@design.photo.key, :width=>600, :crop=>"scale", :radius => 8) %>
+      <%= cl_image_tag(@design.photo.key,) %>
     </div>
 
     <div class="mediaContent">
@@ -40,7 +40,7 @@
       <%= cl_image_tag(@design.photo.key, :width=>600, :crop=>"scale", :radius => 8) %>
     </div>
 
-    <div class="col-12 col-sm-4 col-md-4 col-lg-4 mediaContent">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4">
       <h1><%= @design.title %></h1>
       <p><%= @design.source %></p>
       <p><%= @design.description %></p>
