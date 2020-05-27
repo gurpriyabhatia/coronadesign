@@ -26,9 +26,17 @@
 }
 
 .nav-link {
-  margin: 0;
-  color:  #800020 !important;
-  text-decoration: none;
+  // position: absolute;
+  width: 99px;
+  height: 22px;
+  left: 1123px;
+  top: 53px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #787878  !important;
 }
 
 .btn-ghost {
@@ -51,6 +59,7 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
+  font-size: 17px;
   background: #787878;
   transition: background 0.3s ease;
 }
