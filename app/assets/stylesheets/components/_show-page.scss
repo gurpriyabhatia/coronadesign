@@ -32,6 +32,17 @@ img {
 }
 
 
+body {
+  margin: 0;
+}
+
+.media img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
 .mediaContent {
   // background: #fff;
   padding: 20px 20px 16px 28px;
@@ -43,4 +54,6 @@ img {
   // text-align: left;
   // overflow-wrap: break-word;
 }
+
+
 
