@@ -19,6 +19,7 @@ puts 'Creating user...'
 User.create(
   email: "gurpriya@test.com",
   password: "hellohello",
+  username: "gurpriya"
   )
 puts "Gurpriya created"
 
